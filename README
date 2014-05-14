@@ -1,0 +1,6 @@
+Nota: per i datacenter "aws_eu" e "aws_eu_scalr" come hostname viene usato il nome
+del certificato di Puppet, per gli altri host l'hostname della macchina.
+
+Nei datacenter aws_eu e aws_eu_scalr viene inoltre pushata la riga:
+$ip_privato hostname (non fqdn)
+che serve a far funzionare l'autenticazione ssh hostbased
